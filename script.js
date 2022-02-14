@@ -24,3 +24,4 @@ const hide = function (items) {
 }
 
 hide(projects);
+// make it so clicking on paragraph does not hide it 
