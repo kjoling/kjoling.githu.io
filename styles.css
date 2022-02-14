@@ -4,8 +4,142 @@ html {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   font-family: "Source Code Pro", monospace;
+  font-family: 'Gideon Roman', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   height: 100%;
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  padding: 5px;
+  margin: 5px;
+}
+
+body {
+  padding: 0 1rem;
+  margin: 0 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Header section */
+header {
+  background-image: url('./images/leaves-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: .9rem;
+  background-color: lightgray;
+  opacity: .6;
+}
+
+h1.navbar-brand {
+  font-family: 'Gideo Roman', cursive;
+  font-size: 2rem;
+}
+
+#navbarUl {
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.25rem;
+  align-content: space-between;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .nav-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .nav-items li a {
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*About Me section */
+#about {
+  margin: 1rem 0;
+
+}
+
+
+
+#about .container {
+  display: flex;
+  align-items: center;
+}
+
+.container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+  line-height: 1.6;
+}
+
+.portrait {
+  width: 300px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  height: auto;
+  max-height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  #about .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait {
+    margin-top: 1rem;
+  }
+}
+
+/*Project section */
+.project h3:hover {
+  cursor: pointer;
 }

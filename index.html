@@ -1,16 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital@0;1&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/62008a3285.js" crossorigin="anonymous"></script>
     <title>Keean Joling's Portfolio
@@ -19,49 +23,133 @@
 
 <body>
     <header>
-        <h1>Keean Joling</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="./contact.html">Contact Me</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <h1 class="navbar-brand"">Keean Joling</h1>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="navbarUl">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contact.html">Contact Me</a>
+                            </li>
+                    </div>
+            </div>
         </nav>
     </header>
     <main>
         <section id='about'>
             <h2>About Me</h2>
             <div class="container">
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sint beatae est nam laborum
-                    quis
-                    consectetur quos voluptatibus illum nemo, dolores sapiente earum harum nesciunt totam nostrum
-                    aliquam
-                    animi veritatis?
-                    Corrupti id iure eaque exercitationem itaque voluptatum modi minus! Fugit voluptas, fuga magni
-                    consectetur, iure, laudantium perferendis vel libero temporibus fugiat officiis deleniti provident
-                    rerum
-                    quibusdam enim natus? Ab, recusandae!
-                    Vero, aspernatur eius. Assumenda similique aliquam aut velit esse eum error unde quaerat numquam,
-                    architecto optio facilis tenetur molestiae vero asperiores quasi? Nemo iure quaerat laboriosam
-                    expedita
-                    consequuntur sequi iusto.</article>
-                <img src="./images/leio-mclaren-nGwhwpzLGnU-unsplash.jpg" alt="Person overlooking a canyon">
+                <article>
+                    <p>Hi! I'm Keean Joling, a self-taught programmer who has a BS in Kinesiology and an MA in Science
+                        Education. Currently, I work as a Management Analyst for Washington State in public records.
+                    </p>
+                    <br>
+                    <p>I provide technical assistance to my unit, generate reports, provide analysis, test new features,
+                        write how-to guides, and am part of a team that ensures compliance with WA RCW regarding
+                        disclosure of public records.</p>
+                    <br>
+
+                    <p>In my free time I like to workout, spend time with friends and family, play video games, enjoy
+                        live music, and recently picked up learning how to DJ. I consider myself a life-long learner,
+                        always trying to improve myself in pursuit of being the best version of myself that I can be.
+                    </p>
+                    <br>
+
+                    <p>Fun fact! I've been programing for 6,506,307,255 seconds!</p>
+                </article>
+                <img src="./images/leio-mclaren-nGwhwpzLGnU-unsplash.jpg" alt="Person overlooking a canyon"
+                    class="portrait">
             </div>
         </section>
         <section id="projects">
-            <h2>My Projects (so far)</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Project description</p>
-            </div>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Project description</p>
-            </div>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Project description</p>
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum, fugiat
+                        perferendis officia sint harum quae similique libero nemo, quo odit fugit dolore quidem a autem
+                        inventore iste eum explicabo!
+                        Pariatur magnam doloremque, dolores laborum in aliquid. Excepturi sint, nesciunt voluptatibus
+                        cum quaerat molestias a praesentium eos minus quam vel aut amet consequatur fuga nostrum atque
+                        sed ea dolor. Corporis?
+                        Modi odit at facere quo id iure, libero architecto est earum autem. Eos cupiditate dolorum,
+                        maiores quibusdam magni quidem minus dicta veritatis tempore inventore animi quod iusto. Amet,
+                        ea nemo.
+                        Delectus, veritatis omnis. Quis repellendus recusandae blanditiis exercitationem doloremque quas
+                        magnam aliquid nulla odio maxime velit, earum vero totam adipisci fugiat repellat explicabo esse
+                        quae, debitis veniam? Quis, fugit quos!
+                        Reprehenderit magnam maiores laboriosam illo explicabo aperiam quaerat, sapiente quia aliquam
+                        placeat in nostrum qui corrupti nisi rerum nemo architecto. Voluptatibus laudantium nam culpa
+                        quidem atque? Quidem eaque consectetur nihil!
+                        Atque sequi voluptas assumenda, rerum perspiciatis culpa necessitatibus nesciunt debitis quae
+                        ipsam, et repellendus suscipit minus alias id pariatur neque aspernatur cumque impedit molestias
+                        quod minima qui voluptate. Accusantium, obcaecati.
+                        Delectus, quo. Suscipit tenetur eius odio, consequatur dolor recusandae soluta quasi illum
+                        voluptatibus delectus, iste itaque modi expedita dolore deleniti aliquam incidunt? Itaque,
+                        necessitatibus nisi! Architecto velit quibusdam eaque pariatur!</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum, fugiat
+                        perferendis officia sint harum quae similique libero nemo, quo odit fugit dolore quidem a autem
+                        inventore iste eum explicabo!
+                        Pariatur magnam doloremque, dolores laborum in aliquid. Excepturi sint, nesciunt voluptatibus
+                        cum quaerat molestias a praesentium eos minus quam vel aut amet consequatur fuga nostrum atque
+                        sed ea dolor. Corporis?
+                        Modi odit at facere quo id iure, libero architecto est earum autem. Eos cupiditate dolorum,
+                        maiores quibusdam magni quidem minus dicta veritatis tempore inventore animi quod iusto. Amet,
+                        ea nemo.
+                        Delectus, veritatis omnis. Quis repellendus recusandae blanditiis exercitationem doloremque quas
+                        magnam aliquid nulla odio maxime velit, earum vero totam adipisci fugiat repellat explicabo esse
+                        quae, debitis veniam? Quis, fugit quos!
+                        Reprehenderit magnam maiores laboriosam illo explicabo aperiam quaerat, sapiente quia aliquam
+                        placeat in nostrum qui corrupti nisi rerum nemo architecto. Voluptatibus laudantium nam culpa
+                        quidem atque? Quidem eaque consectetur nihil!
+                        Atque sequi voluptas assumenda, rerum perspiciatis culpa necessitatibus nesciunt debitis quae
+                        ipsam, et repellendus suscipit minus alias id pariatur neque aspernatur cumque impedit molestias
+                        quod minima qui voluptate. Accusantium, obcaecati.
+                        Delectus, quo. Suscipit tenetur eius odio, consequatur dolor recusandae soluta quasi illum
+                        voluptatibus delectus, iste itaque modi expedita dolore deleniti aliquam incidunt? Itaque,
+                        necessitatibus nisi! Architecto velit quibusdam eaque pariatur!</p>
+                </div>
+                <div class="project">
+                    <h3>Project Title</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum, fugiat
+                        perferendis officia sint harum quae similique libero nemo, quo odit fugit dolore quidem a autem
+                        inventore iste eum explicabo!
+                        Pariatur magnam doloremque, dolores laborum in aliquid. Excepturi sint, nesciunt voluptatibus
+                        cum quaerat molestias a praesentium eos minus quam vel aut amet consequatur fuga nostrum atque
+                        sed ea dolor. Corporis?
+                        Modi odit at facere quo id iure, libero architecto est earum autem. Eos cupiditate dolorum,
+                        maiores quibusdam magni quidem minus dicta veritatis tempore inventore animi quod iusto. Amet,
+                        ea nemo.
+                        Delectus, veritatis omnis. Quis repellendus recusandae blanditiis exercitationem doloremque quas
+                        magnam aliquid nulla odio maxime velit, earum vero totam adipisci fugiat repellat explicabo esse
+                        quae, debitis veniam? Quis, fugit quos!
+                        Reprehenderit magnam maiores laboriosam illo explicabo aperiam quaerat, sapiente quia aliquam
+                        placeat in nostrum qui corrupti nisi rerum nemo architecto. Voluptatibus laudantium nam culpa
+                        quidem atque? Quidem eaque consectetur nihil!
+                        Atque sequi voluptas assumenda, rerum perspiciatis culpa necessitatibus nesciunt debitis quae
+                        ipsam, et repellendus suscipit minus alias id pariatur neque aspernatur cumque impedit molestias
+                        quod minima qui voluptate. Accusantium, obcaecati.
+                        Delectus, quo. Suscipit tenetur eius odio, consequatur dolor recusandae soluta quasi illum
+                        voluptatibus delectus, iste itaque modi expedita dolore deleniti aliquam incidunt? Itaque,
+                        necessitatibus nisi! Architecto velit quibusdam eaque pariatur!</p>
+                </div>
             </div>
         </section>
         <section id="skills">
@@ -75,7 +163,7 @@
                 <i class="fa-brands fa-github"></i>
                 <i class="fab fa-chrome"></i>
             </div>
-            <h2>Future skills to work towards:</h2>
+            <h2>In the works:</h2>
             <div id="skills-soon">
                 <i class="fa-brands fa-react"></i>
                 <i class="fab fa-node"></i>
@@ -87,7 +175,10 @@
     <footer>
         <h3>Made by Keean Joling</h3>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
