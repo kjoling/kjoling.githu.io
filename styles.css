@@ -4,9 +4,9 @@ html {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   font-family: "Source Code Pro", monospace;
-  font-family: 'Gideon Roman', cursive;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Gideon Roman", cursive;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   height: 100%;
@@ -17,7 +17,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 5px 0;
   margin: 5px 0;
 }
@@ -46,7 +46,7 @@ body {
 
 /* Header section */
 header {
-  background-image: url('./images/leaves-background.jpeg');
+  background-image: url("./images/leaves-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1rem;
@@ -55,19 +55,19 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  padding: .9rem;
+  padding: 0.9rem;
   background-color: lightgray;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 h1.navbar-brand {
-  font-family: 'Gideo Roman', cursive;
+  font-family: "Gideon Roman", cursive;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #navbarUl {
-
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.25rem;
   align-content: space-between;
 }
@@ -75,8 +75,6 @@ h1.navbar-brand {
 .navbar-collapse {
   flex-grow: 0;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .nav-items {
@@ -91,7 +89,7 @@ h1.navbar-brand {
   .nav-items li a {
     padding: 5px;
     margin: 5px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     font-size: 1.25rem;
     letter-spacing: 1px;
     text-decoration: none;
@@ -102,10 +100,7 @@ h1.navbar-brand {
 /*About Me section */
 #about {
   margin: 1rem 0;
-
 }
-
-
 
 #about .container {
   display: flex;
@@ -142,4 +137,9 @@ h1.navbar-brand {
 /*Project section */
 .project h3:hover {
   cursor: pointer;
+}
+
+.contactIcons {
+  margin: 5px 0;
+  padding: 5px 0;
 }

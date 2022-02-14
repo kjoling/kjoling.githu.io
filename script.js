@@ -1,4 +1,4 @@
-const projects = document.querySelectorAll('.project');
+const projects = document.querySelectorAll(".project");
 // for (let project of projects) {
 //     project.addEventListener('click',
 //         function (e) {
@@ -12,16 +12,13 @@ const projects = document.querySelectorAll('.project');
 // }
 
 const hide = function (items) {
-    for (let item of items) {
-        const paragraphInfo = item.querySelector('p');
-        item.addEventListener('click', function (e) {
-            paragraphInfo.classList.toggle('hide');
-            console.dir(paragraphInfo);
-            paragraphInfo.removeEventListener('click', hide);
-        });
-        paragraphInfo.removeEventListener('click', hide);
-    }
-}
+  for (let item of items) {
+    const header = item.querySelector("h3");
+    const paragraphInfo = item.querySelector("p");
+    header.addEventListener("click", function (e) {
+      if (e.target === e.currentTarget) paragraphInfo.classList.toggle("hide");
+    });
+  }
+};
 
 hide(projects);
-// make it so clicking on paragraph does not hide it 
