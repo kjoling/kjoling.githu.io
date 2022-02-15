@@ -22,3 +22,19 @@ const hide = function (items) {
 };
 
 hide(projects);
+
+const darkMode = document.querySelector("#btn-check-outlined");
+const darkModeText = document.querySelector(".btn-outline-secondary");
+const documentBody = document.body;
+
+darkMode.addEventListener("click", function (e) {
+  if (e.target === e.currentTarget) {
+    documentBody.classList.toggle("dark-mode");
+
+    if (documentBody.classList.contains("dark-mode"))
+      darkModeText.innerText = "Light Mode";
+    else if (!documentBody.classList.contains("dark-mode")) {
+      darkModeText.innerText = "Dark Mode";
+    }
+  }
+});

@@ -40,6 +40,11 @@ body {
   margin: 0 2rem;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .hide {
   display: none;
 }
@@ -101,10 +106,13 @@ h1.navbar-brand {
 #about {
   margin: 1rem 0;
 }
-
+.darkModeButton {
+  justify-self: flex-end;
+}
 #about .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container article {
@@ -149,10 +157,6 @@ h1.navbar-brand {
 #skills-container,
 #skills-soon {
   margin-left: 10px;
-}
-#skills-container i,
-#skills-soon i {
-  padding-left: 5px;
 }
 
 /*Contact Page styling */
