@@ -138,7 +138,28 @@ h1.navbar-brand {
 .project h3:hover {
   cursor: pointer;
 }
+/* Skills section */
+#skils {
+  margin: 5px 0;
+  padding: 5px 0;
+}
+#skills h2 {
+  padding: 10px 0;
+}
+#skills-container,
+#skills-soon {
+  margin-left: 10px;
+}
+#skills-container i,
+#skills-soon i {
+  padding-left: 5px;
+}
 
+/*Contact Page styling */
+.contact {
+  padding: 5px 0;
+  margin: 5px 0;
+}
 .contactIcons {
   margin: 5px 0;
   padding: 5px 0;
